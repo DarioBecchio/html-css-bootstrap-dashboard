@@ -1,0 +1,9 @@
+.debug [class^=container-] {
+    border:2px solid red
+}
+.debug .row{
+    border: 2px dashed blue;
+}
+.debug .col{
+    border: 2px solid green;
+}
