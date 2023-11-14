@@ -41,12 +41,40 @@
     </header>
     <!-- /#site_header -->
     <main id="site_main">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h1>Catalogo Libri</h1>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#Addbook" aria-controls="Addbook">
+            Add book <i class="fa fa-book" aria-hidden="true"></i>
+          </button>
+            <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="Addbook" aria-labelledby="staticBackdropLabel">
+            
+              <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="staticBackdropLabel">Warning</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <form action="">
+                  <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="title" id="title" class="form-control" minlenght="5" maxlength="50" placeholder="I promessi sposi" aria-describedby="titlehelper">
+                    <small id="titlehelper" class="text-muted">Type the book title above</small>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Save</button>      
+                </form>
+              </div>
+                         
+                        
+            </div>
+            </div>
+        </div>
         <div class="table-responsive-md">  
           <table class="table table-striped">
             <thead>
               <tr>
                 <th scope="col">Titolo</th>
-                <th scope="col">Data prestito</th>
+                <th scope="col" class="d-none d-md-block">Data prestito</th>
                 <th scope="col">Stato</th>
                 <th scope="col">Azioni</th>
               </tr>
@@ -161,6 +189,11 @@
                       </tr>
                 </table>
         </div>
+      </div>
+      
+      
+
+        
     </main>
     <!-- /#site_main -->
     
